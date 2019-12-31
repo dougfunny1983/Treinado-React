@@ -1,38 +1,52 @@
-.App {
+body {
   text-align: center;
+  background-color: darkgreen;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.divPrincipal {
+  margin-top: 10em;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.conteiner {
+  border: 1px solid black ;
+  border-radius: 2em;
+  margin: 1px;
+  padding: 15px;
+  background-color: rgb(218, 219, 213);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.btn {
+   border-top: 1px solid #a597f7;
+   background: #d6bd65;
+   background: -webkit-gradient(linear, left top, left bottom, from(#9c3e4b), to(#d6bd65));
+   background: -webkit-linear-gradient(top, #9c3e4b, #d6bd65);
+   background: -moz-linear-gradient(top, #9c3e4b, #d6bd65);
+   background: -ms-linear-gradient(top, #9c3e4b, #d6bd65);
+   background: -o-linear-gradient(top, #9c3e4b, #d6bd65);
+   padding: 9px 18px;
+   -webkit-border-radius: 16px;
+   -moz-border-radius: 16px;
+   border-radius: 16px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 16px;
+   font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.btn:hover {
+   border-top-color: #497828;
+   background: #497828;
+   color: #ccc;
+   }
+.btn:active {
+   border-top-color: #5c1b52;
+   background: #5c1b52;
+   }
