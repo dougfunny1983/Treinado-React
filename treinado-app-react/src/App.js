@@ -6,11 +6,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Placarconteiner
-          partida={dados.partida}
-          casa={dados.casa}
-          visitante={dados.visitante}
-        />
+        <Placarconteiner {...dados} />
       </div>
     );
   }

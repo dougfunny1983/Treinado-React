@@ -25,28 +25,25 @@ export default class Placarcontainer extends Component {
     });
   };
   render() {
+    const { partida, casa, visitante } = this.props;
     const { golsCasa, golsVisitante } = this.state;
     return (
       <div className='divPrincipal'>
         <div className='conteiner'>
           <h3>Casa</h3>
           <Time
-            nome={this.props.casa.nome}
+            nome={casa.nome}
             gols={golsCasa}
             marcarGol={this.marcaGolsCasa}
           />
         </div>
         <div className='conteiner'>
-          <Partida
-            estadio={this.props.partida.estadio}
-            data={this.props.partida.data}
-            horario={this.props.partida.horario}
-          />
+          <Partida {...partida} />
         </div>
         <div className='conteiner'>
           <h3>Visitante</h3>
           <Time
-            nome={this.props.visitante.nome}
+            nome={visitante.nome}
             gols={golsVisitante}
             marcarGol={this.marcaGolsVisitante}
           />
